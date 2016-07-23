@@ -1,0 +1,54 @@
+{
+  "name": "mrhotels.co",
+  "version": "1.0.0",
+  "description": "Software for hotel travel agency.",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015-native-modules": "^6.9.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.1.1",
+    "eslint-loader": "^1.4.1",
+    "eslint-plugin-import": "^1.11.1",
+    "eslint-plugin-react": "^5.2.2",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^0.9.1",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkawin/mrhotels.git"
+  },
+  "keywords": [
+    "hotels",
+    "hotel",
+    "travel-agency",
+    "software"
+  ],
+  "author": "Kawin Glomjai <g.kawin@live.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkawin/mrhotels/issues"
+  },
+  "homepage": "https://github.com/gkawin/mrhotels#readme"
+}
