@@ -1,0 +1,32 @@
+{
+  "name": "mrhotels.co",
+  "version": "1.0.0",
+  "description": "Software for hotel travel agency.",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "babel src -d lib",
+    "dev": "env NODE_ENV=development nodemon --exec 'babel-node src/index.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkawin/mrhotels.git"
+  },
+  "author": "Kawin Glomjai <g.kawin@live.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkawin/mrhotels/issues"
+  },
+  "homepage": "https://github.com/gkawin/mrhotels#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "nodemon": "^1.9.2"
+  }
+}
