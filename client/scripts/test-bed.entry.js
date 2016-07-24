@@ -16,7 +16,7 @@ global.expect = global.chai.expect
 TestBedMocha.run({
   // Specify the test context: https://webpack.github.io/docs/context.html
   context: require.context(
-    './src',        // ← Look for test files inside `src` directory.
+    '../src',        // ← Look for test files inside `src` directory.
     true,           // ← Recurse into subdirectories.
     /\.spec\.js$/   // ← Only consider files ending in `.spec.js`.
   )
