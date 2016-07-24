@@ -7,26 +7,18 @@ const SOURCE_PATH = path.resolve(__dirname, '..', 'src')
 const BUILD_PATH = path.resolve(__dirname, '..', 'build')
 
 //export webpack configuration
-module.export = {
+module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
-    travel_bylon: [ 'babel-polyfill', './index.js' ]
+    bundle: [ 'babel-polyfill', path.resolve(SOURCE_PATH, 'index.js') ]
   },
   output: {
-    //no required in dev mode, nonetheless it will be crashes without them.
     path: BUILD_PATH,
+    publicPath: 'http://localhost:2000/asserts/',
+    filename: `[name].js`,
     pathinfo: true,
-    filename: `[name]${development ? '' : ''}.js`,
-    publicPath: 'http://localhost:2000/asserts/'
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loader: 'eslint',
-        include: SOURCE_PATH,
-      }
-    ],
     loaders: [
       {
         test: /\.(css)$/,
@@ -42,5 +34,18 @@ module.export = {
         loader: 'babel?cacheDirectory',
       }
     ],
+  },
+  plugins: [
+    new webpack.DefinePlugin({ 'process.env.NODE_ENV': process.env.NODE_ENV }),
+    // Note: only CSS is currently hot reloaded
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  postcss: function () {
+    return [
+      autoprefixer({
+        browsers: ['> 1%', 'IE 10', 'last 2 versions'],
+        cascade: false,
+      })
+    ]
   },
 }
