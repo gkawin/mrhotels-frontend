@@ -10,13 +10,11 @@ const BUILD_PATH = path.resolve(__dirname, '..', 'build')
 //export webpack configuration
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
-  entry: {
-    bundle: [ 'babel-polyfill', path.resolve(SOURCE_PATH, 'index.js') ]
-  },
+  entry: 'babel!./scripts/test-bed.entry.js',
   output: {
     path: BUILD_PATH,
     publicPath: 'http://localhost:2000/asserts/',
-    filename: '[name].js',
+    filename: 'test-bundle.js',
     pathinfo: true,
   },
   module: {
