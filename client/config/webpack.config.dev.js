@@ -1,3 +1,5 @@
+process.env.NODE_ENV = 'development'
+
 const webpack      = require('webpack')
 const path         = require('path')
 const autoprefixer = require('autoprefixer')
@@ -35,11 +37,6 @@ module.exports = {
       }
     ],
   },
-  plugins: [
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': process.env.NODE_ENV }),
-    // Note: only CSS is currently hot reloaded
-    new webpack.HotModuleReplacementPlugin()
-  ],
   postcss: function () {
     return [
       autoprefixer({
@@ -48,4 +45,14 @@ module.exports = {
       })
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+    progress: true,
+    stats: {
+      children: false,
+      chunks: false,
+      colors: true,
+      modules: false
+    },
+  }
 }
