@@ -14,10 +14,11 @@
     "recompose": "^0.20.2",
     "redux": "^3.5.2",
     "reselect": "^2.5.3"
-    },
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-class-properties": "^6.10.2",
     "babel-plugin-transform-runtime": "^6.9.0",
@@ -27,6 +28,10 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-2": "^6.11.0",
     "css-loader": "^0.23.1",
+    "eslint": "^3.1.1",
+    "eslint-plugin-import": "^1.11.1",
+    "eslint-plugin-pure": "github:purely-functional/eslint-plugin-pure",
+    "eslint-plugin-react": "^5.2.2",
     "postcss-loader": "^0.9.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
