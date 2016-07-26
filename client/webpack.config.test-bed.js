@@ -15,6 +15,14 @@ module.exports = {
     filename: 'test.bundle.js',
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
   },
+  module: {
+    loaders: [
+      {
+        test: /\.(json)$/,
+        loader: 'json',
+      },
+    ]
+  },
   plugins: [
     // Enzyme
     new webpack.IgnorePlugin(/react\/lib\/(?:ExecutionEnvironment|ReactContext)/),

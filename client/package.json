@@ -34,20 +34,10 @@
     "eslint-plugin-import": "^1.11.1",
     "eslint-plugin-pure": "github:purely-functional/eslint-plugin-pure",
     "eslint-plugin-react": "^5.2.2",
-    "karma": "^0.13.22",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^1.0.1",
-    "karma-coverage": "^0.5.5",
-    "karma-growl-reporter": "^0.1.1",
-    "karma-junit-reporter": "^0.4.0",
-    "karma-mocha": "^0.2.2",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "karma-sinon": "^1.0.4",
-    "karma-sourcemap-loader": "^0.3.7",
+    "json-loader": "^0.5.4",
     "mocha": "^2.5.3",
     "postcss-loader": "^0.9.1",
-    "sinon": "^1.17.4",
-    "sinon-chai": "^2.8.0",
+    "power-assert": "^1.4.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.1.1",
@@ -57,7 +47,8 @@
   },
   "scripts": {
     "build": "node ./scripts/build.js",
-    "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --host=0.0.0.0 --port=2000 --config ./config/webpack.config.dev.js"
+    "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --host=0.0.0.0 --port=2000 --config ./config/webpack.config.dev.js",
+    "dev:test": "env NODE_ENV=test test-bed"
   },
   "repository": {
     "type": "git",

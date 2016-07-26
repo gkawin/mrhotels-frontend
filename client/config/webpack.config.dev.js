@@ -30,6 +30,10 @@ module.exports = {
         loaders: [ 'style', 'css', 'postcss', 'stylus' ]
       },
       {
+        test: /\.(json)$/,
+        loader: 'json',
+      },
+      {
         test: /\.(js)$/,
         exclude: /node_modules/,
         loader: 'babel?cacheDirectory',

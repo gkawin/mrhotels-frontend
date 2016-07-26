@@ -14,6 +14,7 @@ env:
   mocha: true
   es6: true
 globals:
+  assert: false
   expect: false
   _L: false
 rules:
