@@ -44,6 +44,8 @@
     "mocha": "^2.5.3",
     "postcss-loader": "^0.9.1",
     "power-assert": "^1.4.1",
+    "sinon": "^1.17.5",
+    "sinon-chai": "^2.8.0",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.1.1",

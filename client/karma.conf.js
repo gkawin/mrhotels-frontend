@@ -5,7 +5,7 @@ module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '..',
+    basePath: '',
 
 
     // frameworks to use
@@ -15,7 +15,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '../build/test-assets/test.bundle.js'
+      'build/test-assets/test.bundle.js'
     ],
 
 
@@ -52,6 +52,8 @@ module.exports = function (config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['PhantomJS_custom'],
+    browserDisconnectTolerance: 999999,
+    retryLimit: 999999,
     customLaunchers: {
       'PhantomJS_custom': {
         base: 'PhantomJS',
@@ -63,10 +65,6 @@ module.exports = function (config) {
         },
       }
     },
-
-    // Concurrency level
-    // how many browser should be started simultaneous
-    concurrency: Infinity,
 
     // plugins
     plugins: [
