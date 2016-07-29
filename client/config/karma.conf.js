@@ -19,11 +19,6 @@ module.exports = function (config) {
     ],
 
 
-    // list of files to exclude
-    exclude: [
-    ],
-
-
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
@@ -56,15 +51,30 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
-
-
-    // Continuous Integration mode
-    // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    browsers: ['PhantomJS_custom'],
+    customLaunchers: {
+      'PhantomJS_custom': {
+        base: 'PhantomJS',
+        options: {
+          viewportSize: {
+            width: 1000,
+            height: 1000
+          }
+        },
+      }
+    },
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    // plugins
+    plugins: [
+      'karma-chai',
+      'karma-mocha',
+      'karma-sinon',
+      'karma-phantomjs-launcher',
+      'karma-sourcemap-loader',
+    ],
   })
 }
