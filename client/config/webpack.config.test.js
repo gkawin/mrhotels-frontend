@@ -9,7 +9,7 @@ const BASE = path.resolve(__dirname, '..')
 //export webpack configuration
 module.exports = {
   devtool: 'inline-cheap-module-source-map',
-  entry: 'babel!./scripts/test.entry.js',
+  entry: './scripts/test.entry.js',
   output: {
     path: path.join(BASE, 'build', 'test-assets'),
     filename: 'test.bundle.js',
@@ -21,6 +21,11 @@ module.exports = {
         test: /\.(json)$/,
         loader: 'json',
       },
+      {
+        test: /\.(js)$/,
+        exclude: /node_modules/,
+        loader: 'babel?cacheDirectory',
+      }
     ]
   },
   plugins: [

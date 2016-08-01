@@ -58,7 +58,7 @@
     "build:test": "env NODE_ENV=test webpack --config ./config/webpack.config.test.js",
     "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --host=0.0.0.0 --port=2000 --config ./config/webpack.config.dev.js",
     "dev:test": "env NODE_ENV=test test-bed",
-    "test": "karma start -- --single-run"
+    "test": "karma start ./config/karma.conf.js -- --single-run"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-
+import 'babel-polyfill'
 import React from 'react'
 import chai from 'chai'
 import assert from 'power-assert'
@@ -12,11 +12,12 @@ Object.assign(global, {
 
 chai.use(require('sinon-chai'))
 
-// Require ALL THE TESTS
-const requireAllTests = context => context.keys().forEach(function (name) {
-  describe(name, function () {
-    context(name)
-  })
+const context = require.context('../src', true, /\.spec\.js$/)
+
+context.keys().forEach(key => {
+  // describe(key, function () {
+    context(key)
+  // })
 })
 
-requireAllTests(require.context('../src', true, /\.spec\.js$/))
+module.exports = context
