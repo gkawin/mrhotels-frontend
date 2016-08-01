@@ -66,6 +66,8 @@ module.exports = function (config) {
       }
     },
 
+    singleRun: true,
+
     // plugins
     plugins: [
       'karma-chai',
