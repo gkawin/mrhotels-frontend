@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: '6'
+
+dependencies:
+  pre:
+    - echo '128.199.99.62 registry.npmjs.org' | sudo tee -a /etc/hosts # Temporary work around npm outage https://github.com/npm/npm/issues/13284
+    - npm i -g codecov npm@latest commit-status
+  override:
+    - (cd client && npm i && npm i)
+  cache_directories:
+    - 'client/node_modules'
+  post:
+    - sudo apt-get install xosd-bin
+test:
+  override:
+    - (cd client && npm run build:test && npm run test)
+  post:
+    - codecov:
+        parallel: true
