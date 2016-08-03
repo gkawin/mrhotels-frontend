@@ -10,4 +10,4 @@ export const {
   LoginRequested,
   LoginSucceeded,
   LoginFail
-}
+} = Action
