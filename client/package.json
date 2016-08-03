@@ -33,7 +33,7 @@
     "eslint": "^3.1.1",
     "eslint-plugin-import": "^1.11.1",
     "eslint-plugin-pure": "github:purely-functional/eslint-plugin-pure",
-    "eslint-plugin-react": "^5.2.2",
+    "eslint-plugin-react": "^6.0.0",
     "json-loader": "^0.5.4",
     "karma": "^1.1.2",
     "karma-chai": "^0.1.0",
@@ -58,7 +58,8 @@
     "build:test": "env NODE_ENV=test webpack --config ./config/webpack.config.test.js",
     "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --host=0.0.0.0 --port=2000 --config ./config/webpack.config.dev.js",
     "dev:test": "env NODE_ENV=test test-bed",
-    "test": "karma start ./config/karma.conf.js"
+    "test": "karma start ./config/karma.conf.js",
+    "lint": "./node_modules/.bin/eslint src"
   },
   "repository": {
     "type": "git",
