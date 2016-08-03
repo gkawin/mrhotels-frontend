@@ -1,10 +1,7 @@
-//endpoint file 
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './ui'
-
 ReactDOM.render(
-  <App />,
+  <div>helldooffffffoo</div>,
   document.getElementById('react')
 )
