@@ -8,6 +8,4 @@ export const rootReducer = combineReducers({
   routing: routerReducer
 })
 
-console.log(rootReducer)
-
 export default rootReducer
