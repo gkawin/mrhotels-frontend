@@ -11,7 +11,7 @@ const BUILD_PATH = path.resolve(__dirname, '..', 'build')
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
-    bundle: [ 'babel-polyfill', path.resolve(SOURCE_PATH, 'index.js') ]
+    bundle: [ 'babel-polyfill', path.resolve(SOURCE_PATH, 'index.entry.js') ]
   },
   output: {
     path: BUILD_PATH,
