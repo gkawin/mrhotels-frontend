@@ -72,7 +72,8 @@
     "dev:test": "env NODE_ENV=test test-bed",
     "dev:ui": "env NODE_ENV=development start-storybook -p 2007",
     "test": "karma start ./config/karma.conf.js",
-    "lint": "./node_modules/.bin/eslint src"
+    "lint": "./node_modules/.bin/eslint src",
+    "l10n": "node ./lib/languages/downloadl10n.js"
   },
   "repository": {
     "type": "git",
