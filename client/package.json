@@ -7,15 +7,18 @@
     "algebraic-type": "^1.1.0",
     "babel-runtime": "^6.9.2",
     "immutable": "^3.8.1",
+    "lodash": "^4.15.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.5.2",
+    "react-router-redux": "^4.0.5",
     "recompose": "^0.20.2",
     "redux": "^3.5.2",
     "reselect": "^2.5.3"
   },
   "devDependencies": {
+    "@kadira/storybook": "^1.30.0",
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.10.4",
     "babel-eslint": "^6.1.2",
@@ -59,8 +62,9 @@
   "scripts": {
     "build": "node ./scripts/build.js",
     "build:test": "env NODE_ENV=test webpack --config ./config/webpack.config.test.js",
-    "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --host=0.0.0.0 --port=2000 --config ./config/webpack.config.dev.js",
+    "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --host=0.0.0.0 --port=2000 --config ./config/webpack.config.dev",
     "dev:test": "env NODE_ENV=test test-bed",
+    "dev:ui": "env NODE_ENV=development start-storybook -p 2007",
     "test": "karma start ./config/karma.conf.js",
     "lint": "./node_modules/.bin/eslint src"
   },
