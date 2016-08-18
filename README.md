@@ -20,9 +20,8 @@ npm run dev:ui
 ## Server workflow
 -start babel CLI and nodemon for run node (express)
 ```sh
-npm ru dev
+npm run dev
 ```
-
 
 ## CSS
 We're using STYLUS and BEM style for developing.
@@ -31,7 +30,6 @@ Keep in mind and aware while writing in BEM CSS style
 
 1. Never overriding modifiers in an unrelated block.
 2. Avoiding making unnecessary parent elements when the child can exist quite happily by itself.
-
 
 
 #FAQ
