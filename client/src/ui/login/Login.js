@@ -1,13 +1,11 @@
 import React from 'react'
 
-const Login = React.createClass({
-  render () {
-    return (
-      <div>
-        Login ja
-      </div>
-    )
-  }
-})
+import * as Form from '../form'
+import './Login.styl'
 
+const Login = () => (
+  <div className='login__form'>
+    <Form.FormInput />
+  </div>
+)
 export default Login
