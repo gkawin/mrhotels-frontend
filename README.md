@@ -3,20 +3,26 @@ open source for travel agency and hotels.
 
 Status: Development Enviroment.
 
-## Available commands
+## Client development workflow (command)
+- start development (webpack-dev-server)
 ```sh
-cd ./client && npm install && cd ../server && npm install
+npm run dev
 ```
-and then
-```sh
-cd ./client && npm run dev && cd ../server && npm run dev
-```
-
-### testing tool
+- start test server (by Test-bed)
 ```sh
 npm run dev:test
 ```
-we're using `test-bed` package.
+- start ui test (storybook)
+```sh
+npm run dev:ui
+```
+
+## Server workflow
+-start babel CLI and nodemon for run node (express)
+```sh
+npm ru dev
+```
+
 
 ## CSS
 We're using STYLUS and BEM style for developing.
