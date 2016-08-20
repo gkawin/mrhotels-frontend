@@ -5,9 +5,13 @@ import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 
+// Import stylesheets to use
+require('font-awesome/css/font-awesome.css')
+
 import App from './ui/App'
 import { Login } from './ui/login'
 import store from './store'
+
 
 // Create an enhanced history that syncs navigation events with the store
 const history = syncHistoryWithStore(browserHistory, store)
