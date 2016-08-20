@@ -1,11 +1,16 @@
 import React from 'react'
 
-import * as Form from '../form'
+import {
+  Form,
+  FormInput
+} from '../form'
 import './Login.styl'
 
 const Login = () => (
-  <div className='login__form'>
-    <Form.FormInput />
+  <div className='login'>
+    <Form className='login__form'>
+      this is form
+    </Form>
   </div>
 )
 export default Login

@@ -41,7 +41,6 @@ rules:
   no-extra-parens: [2, "functions"]
   space-before-function-paren: [2, "always"]
   no-spaced-func: 2
-  react/jsx-filename-extension: [1, { "extensions": [".js"] }]
   react/jsx-boolean-value: [2, "never"]
   react/jsx-indent-props: [1, 2]
   react/jsx-closing-bracket-location: [1, "line-aligned"]

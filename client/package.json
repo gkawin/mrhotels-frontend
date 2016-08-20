@@ -6,6 +6,7 @@
   "dependencies": {
     "algebraic-type": "^1.1.0",
     "babel-runtime": "^6.9.2",
+    "classnames": "^2.2.5",
     "immutable": "^3.8.1",
     "lodash": "^4.15.0",
     "react": "^15.1.0",
