@@ -6,10 +6,7 @@ import configureRoutes from './configureRoutes'
 const app = Express()
 
 app.set('view engine', 'pug')
-app.get('*', async (request, response, next) => {
-  await configureRoutes(request, response)
-  next()
-})
+app.use(configureRoutes)
 app.listen(2001, () => {
   console.log('server is running.')
 })
