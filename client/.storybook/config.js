@@ -3,6 +3,8 @@ import _ from 'lodash'
 import React from 'react'
 import { basename } from 'path'
 
+require('font-awesome/css/font-awesome.css')
+
 function loadStories () {
   const context = require.context('../src', true, /\.story\.js$/)
   for (const key of _.sortBy(context.keys(), storybookNameOfKey)) {

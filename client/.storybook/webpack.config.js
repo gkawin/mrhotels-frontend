@@ -1,31 +1,10 @@
-const autoprefixer = require('autoprefixer')
+
+const webpackConfig = require('../config/webpack.config.dev')
 
 module.exports = {
   output: {},
-  module: {
-    loaders: [
-      {
-        test: /\.(css)$/,
-        loaders: [ 'style', 'css' ],
-      },
-      {
-        test: /\.(styl)$/,
-        loaders: [ 'style', 'css', 'postcss', 'stylus' ]
-      },
-      {
-        test: /\.(json)$/,
-        loader: 'json',
-      },
-    ]
-  },
-  postcss: function () {
-    return [
-      autoprefixer({
-        browsers: ['> 1%', 'IE 10', 'last 2 versions'],
-        cascade: false,
-      })
-    ]
-  },
+  module: webpackConfig.module,
+  postcss: webpackConfig.postcss,
   node: {
     fs: 'empty'
   },

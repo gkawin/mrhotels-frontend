@@ -34,9 +34,27 @@ module.exports = {
         loader: 'json',
       },
       {
+        test: /\.(jpe?g|mp4|otf|svg|ttf|woff|woff2|eot)(?:$|\?)/,
+        loaders: [ 'file' ],
+        query: {
+          name: '[name]-[hash:8].[ext]'
+        }
+      },
+      {
+        test: /\.(gif|png|ico)$/,
+        loaders: [ 'url' ],
+        query: {
+          name: '[name]-[hash:8].[ext]',
+          limit: 10240
+        }
+      },
+      {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        loader: 'babel?cacheDirectory',
+        loader: [ 'babel' ],
+        query: {
+          'cacheDirectory': true
+        }
       }
     ],
   },

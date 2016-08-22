@@ -3,6 +3,8 @@ process.env.NODE_ENV = 'test'
 const path         = require('path')
 const webpack      = require('webpack')
 
+const webpackConfig = require('../config/webpack.config.dev')
+
 //resolve path files.
 const BASE = path.resolve(__dirname, '..')
 
@@ -15,19 +17,7 @@ module.exports = {
     filename: 'test.bundle.js',
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
   },
-  module: {
-    loaders: [
-      {
-        test: /\.(json)$/,
-        loader: 'json',
-      },
-      {
-        test: /\.(js)$/,
-        exclude: /node_modules/,
-        loader: 'babel?cacheDirectory',
-      }
-    ]
-  },
+  module: webpackConfig.module,
   plugins: [
     // Enzyme
     new webpack.IgnorePlugin(/react\/lib\/(?:ExecutionEnvironment|ReactContext)/),
