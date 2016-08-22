@@ -6,6 +6,8 @@ import {
 } from '../form'
 import './Login.styl'
 
+console.log('called login from client side')
+
 const Login = () => (
   <div className='login'>
     <Form className='login__form'>
