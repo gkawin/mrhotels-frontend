@@ -1,7 +1,6 @@
 //endpoint file
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { renderToString } from 'react-dom/server'
 import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
@@ -22,7 +21,7 @@ function render (element) {
 }
 
 const bootstrapper = {
-  'bootApp': () => {
+  bootApp () {
     render(
       <Provider store={store}>
         <Router history={history}>
@@ -31,7 +30,9 @@ const bootstrapper = {
         </Router>
       </Provider>
     )
-  }
+  },
 }
 
 bootstrapper.bootApp()
+
+export default bootstrapper
