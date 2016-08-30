@@ -1,0 +1,32 @@
+@require '../design/colors.styl'
+
+.button
+  border-radius 5px
+  min-height 28px
+  padding 0 13px
+  color black
+  border 0
+  outline 0
+  transition all 0.1s
+  cursor pointer
+  display inline-block
+  position relative
+  text-align center
+
+  button
+    -webkit-appearance:none
+
+  &.\\--raised
+    line-height 28px
+    min-height 28px
+    height 28px
+    border-bottom 2px solid grey700
+    &:hover
+      color black
+      border-bottom 2px solid grey700
+
+  &.\\--primary
+    background-color grey400
+
+  &:active
+    background-color grey700
