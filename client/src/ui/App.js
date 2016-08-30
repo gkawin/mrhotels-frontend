@@ -1,11 +1,11 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 
 const App = React.createClass({
   render () {
     return (
-      <diva className='twst'>
-        {this.props.a}
-      </diva>
+      <div className='twst'>
+foo bar
+      </div>
     )
   }
 })
