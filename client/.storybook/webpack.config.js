@@ -1,11 +1,11 @@
 
-const webpackConfig = require('../config/webpack.config.dev')
+const generateWebpackConfig = require('../config/generateWebpackConfig')
+
+const webpackConfig = generateWebpackConfig({})
 
 module.exports = {
-  output: {},
+  output: { },
   module: webpackConfig.module,
   postcss: webpackConfig.postcss,
-  node: {
-    fs: 'empty'
-  },
+  node: { fs: 'empty' },
 }
