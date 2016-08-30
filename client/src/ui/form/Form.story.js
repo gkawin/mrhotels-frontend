@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Form, FormInput } from '.'
+import { Form, FormInput, FormRow } from '.'
 
 export { module }
 
@@ -27,11 +27,22 @@ export const stories = {
   'Whole Form Elements': () => (
     <FrontPageSimulator>
       <Form>
-        <FormInput
-          type='text'
-          name='storybookInput'
-          onChange={() => {}}
-        />
+        <FormRow>
+          <FormInput
+            type='text'
+            name='storybookInput'
+            placeholder='common text'
+            onChange={() => {}}
+          />
+        </FormRow>
+        <FormRow>
+          <FormInput
+            type='password'
+            placeholder='password field'
+            name='storybookInput'
+            onChange={() => {}}
+          />
+        </FormRow>
       </Form>
     </FrontPageSimulator>
   ),

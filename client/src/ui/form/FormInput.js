@@ -9,9 +9,7 @@ const fields = [
 ]
 
 export const propFields = ({ type, ...props }) => (
-  _.assign({ type: type },
-    _.pick(props, fields)
-  )
+  _.assign({ type: type }, _.pick(props, fields))
 )
 
 const FormInput = (props) => (
