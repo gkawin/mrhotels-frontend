@@ -29,12 +29,30 @@ FrontPageSimulator.propTypes = {
 export const stories = {
   'Button primary': () => (
     <FrontPageSimulator>
-      <Button
-        raised
-        style='primary'
-      >
-        Submit
-      </Button>
+      <div style={{ marginBottom: '2px' }}>
+        <Button
+          raised
+          style='primary'
+        >
+          Primary
+        </Button>
+      </div>
+      <div style={{ marginBottom: '2px' }}>
+        <Button
+          raised
+          style='disabled'
+        >
+          disabled
+        </Button>
+      </div>
+      <div style={{ marginBottom: '2px' }}>
+        <Button
+          raised
+          style='loading'
+        >
+          loading
+        </Button>
+      </div>
     </FrontPageSimulator>
   )
 }

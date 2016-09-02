@@ -1,10 +1,11 @@
+@require '../design/mixins.styl'
 @require '../design/colors.styl'
 
 .button
   border-radius 5px
   min-height 28px
   padding 0 13px
-  color black
+  color color-text
   border 0
   outline 0
   transition all 0.1s
@@ -16,17 +17,33 @@
   button
     -webkit-appearance:none
 
+  &.\\--primary
+    background grey400
+
+  &.\\--primary:hover
+    background-color grey700
+
+  &.\\--primary:active
+    background-color grey900
+
+  &.\\--disabled
+    background grey200
+    color grey400
+    unselectable()
+
+  &.\\--loading
+    background grey200
+    color grey400
+    unselectable()
+
   &.\\--raised
     line-height 28px
     min-height 28px
     height 28px
-    border-bottom 2px solid grey700
-    &:hover
-      color black
-      border-bottom 2px solid grey700
+    border-bottom 2px solid grey900
 
-  &.\\--primary
-    background-color grey400
+  &.\\--raised.\\--disabled
+    border-bottom 2px solid grey400
 
-  &:active
-    background-color grey700
+  &.\\--raised.\\--loading
+    border-bottom none

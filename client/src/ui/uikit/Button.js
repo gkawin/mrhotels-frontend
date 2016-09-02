@@ -4,11 +4,14 @@ import Classnames from 'classnames'
 
 import './Button.styl'
 
-export const classButton = ({ className, style, raised }) => Classnames('button', className, {
-  '--primary': style === 'primary'
-}, {
-  '--raised': raised
-})
+export const classButton = ({ className, style, raised }) => Classnames(
+  'button',
+  className,
+  {
+    '--raised': raised
+  },
+  `--${style}`,
+)
 
 const Button = (props) => (
   <button
