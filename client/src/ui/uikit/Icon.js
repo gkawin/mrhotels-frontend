@@ -1,6 +1,8 @@
 import React from 'react'
 import classnames from 'classnames'
 
+import './Icon.styl'
+
 const clsIconFeatures = (name, className) => classnames(
   `icon-name__${name}`,
   className
@@ -12,6 +14,10 @@ const Icon = ({ className, onClick, name }) => (
     onClick={onClick}
   />
 )
+
+Icon.getAllIcons = () => {
+  return ''
+}
 
 Icon.propTypes = {
   className: React.PropTypes.string,

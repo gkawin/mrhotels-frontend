@@ -11,8 +11,17 @@ const isDevelopment = (process.env.NODE_ENV === 'development')
 const isTest = (process.env.NODE_ENV === 'test')
 
 //resolve path files.
-const SOURCE_PATH = path.resolve(__dirname, '..', 'src')
-const BUILD_PATH = path.resolve(__dirname, '..', 'build')
+const BASE_PATH = path.resolve(__dirname, '..')
+const SOURCE_PATH = path.resolve(__dirname, BASE_PATH, 'src')
+const BUILD_PATH = path.resolve(__dirname, BASE_PATH, 'build')
+
+function getResolving () {
+  return {
+    alias: {
+      'font-awesome.css$': path.join(BASE_PATH, 'node_modules/font-awesome/css/font-awesome.min.css')
+    }
+  }
+}
 
 function getModuleLoaders () {
   return {
