@@ -9,8 +9,6 @@ import App from './ui/App'
 import { Login } from './ui/login'
 import store from './store'
 
-// Import stylesheets to use
-require('font-awesome/css/font-awesome.css')
 
 // Create an enhanced history that syncs navigation events with the store
 const history = syncHistoryWithStore(browserHistory, store)
