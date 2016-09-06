@@ -5,6 +5,8 @@ import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 
+import './ui/design/index.styl'
+
 import App from './ui/App'
 import { Login } from './ui/login'
 import store from './store'
