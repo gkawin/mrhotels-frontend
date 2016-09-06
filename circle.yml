@@ -15,6 +15,7 @@ dependencies:
 test:
   override:
     - (cd client && npm run build:test && npm run test)
+    - (cd client && npm run lint)
   post:
     - codecov:
         parallel: true

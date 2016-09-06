@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react'
-import { connect } from 'react-redux'
+// import React, { PropTypes } from 'react'
+// import { connect } from 'react-redux'
 
 import { Login } from '../ui/login'
 
