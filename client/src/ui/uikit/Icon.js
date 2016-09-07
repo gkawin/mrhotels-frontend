@@ -9,12 +9,12 @@ import _ from 'lodash'
 
 import './Icon.styl'
 
-export const iconClassname = (className) => Classnames('icon', className)
-
 const propFields = [
   'name', 'size', 'rotate', 'flip', //string
   'pulse', 'inverse', 'spin' //boolean
 ]
+
+export const iconClassname = (className) => Classnames('icon', className)
 
 export const getAllIcons = () => _(document.styleSheets)
   .toArray()
@@ -36,7 +36,6 @@ const Icon = (props) => (
     {..._.pick(props, propFields)}
   />
 )
-
 
 Icon.propTypes = {
   onClick: React.PropTypes.func,
