@@ -36,7 +36,8 @@ const AllIcons = React.createClass({
   render () {
     return (
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', maxWidth: '100vw'}}>
-        <div style={{ width: '90%' }}>
+        <div style={{ width: '100%' }}>
+          สวัสดี
           <FormInput onChange={this.onChange} placeholder='Search something....' />
         </div>
       {_.map(this.state.filtered, this.renderIconWithName)}
