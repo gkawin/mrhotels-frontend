@@ -18,7 +18,8 @@
     "react-router-redux": "^4.0.5",
     "recompose": "^0.20.2",
     "redux": "^3.5.2",
-    "reselect": "^2.5.3"
+    "reselect": "^2.5.3",
+    "validator": "^5.7.0"
   },
   "devDependencies": {
     "@kadira/storybook": "^1.30.0",

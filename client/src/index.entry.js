@@ -20,19 +20,11 @@ function render (element) {
   MrHotels.app = ReactDOM.render(element, document.getElementById('react'))
 }
 
-const bootstrapper = {
-  bootApp () {
-    render(
-      <Provider store={store}>
-        <Router history={history}>
-          <Route path='/' component={App} />
-          <Route path='/login' component={Login} />
-        </Router>
-      </Provider>
-    )
-  },
-}
-
-bootstrapper.bootApp()
-
-export default bootstrapper
+render(
+  <Provider store={store}>
+    <Router history={history}>
+      <Route path='/' component={App} />
+      <Route path='/login' component={Login} />
+    </Router>
+  </Provider>
+)
