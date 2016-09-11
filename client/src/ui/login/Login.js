@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Form, FormRow, FormInput } from '../form'
+import { Form, FormRow, FormInput, FormLabel } from '../form'
 import './Login.styl'
 
 const Login = ({ onChange }) => (
@@ -10,6 +10,7 @@ const Login = ({ onChange }) => (
     </div>
     <Form className='login__form'>
       <FormRow>
+        <FormLabel>Username</FormLabel>
         <FormInput
           type='text'
           placeholder='example@mrhotel.co'
@@ -17,6 +18,7 @@ const Login = ({ onChange }) => (
         />
       </FormRow>
       <FormRow>
+        <FormLabel>Password</FormLabel>
         <FormInput
           type='password'
           placeholder='*******'
