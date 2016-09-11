@@ -1,6 +1,10 @@
 
 import React from 'react'
-import { Form, FormInput, FormRow } from '.'
+
+import FormInput from './FormInput'
+import FormRow from './FormRow'
+import Form from './Form'
+import FormLabel from './FormLabel'
 
 export { module }
 
@@ -36,6 +40,15 @@ export const stories = {
           />
         </FormRow>
         <FormRow>
+          <FormInput
+            type='password'
+            placeholder='password field'
+            name='storybookInput'
+            onChange={() => {}}
+          />
+        </FormRow>
+        <FormRow>
+          <FormLabel>Password</FormLabel>
           <FormInput
             type='password'
             placeholder='password field'
