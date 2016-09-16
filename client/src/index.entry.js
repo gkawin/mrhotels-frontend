@@ -5,6 +5,8 @@ import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 
+import './ui/design/index.styl'
+
 import App from './ui/App'
 import { Login } from './ui/login'
 import store from './store'
@@ -18,19 +20,11 @@ function render (element) {
   MrHotels.app = ReactDOM.render(element, document.getElementById('react'))
 }
 
-const bootstrapper = {
-  bootApp () {
-    render(
-      <Provider store={store}>
-        <Router history={history}>
-          <Route path='/' component={App} />
-          <Route path='/login' component={Login} />
-        </Router>
-      </Provider>
-    )
-  },
-}
-
-bootstrapper.bootApp()
-
-export default bootstrapper
+render(
+  <Provider store={store}>
+    <Router history={history}>
+      <Route path='/' component={App} />
+      <Route path='/login' component={Login} />
+    </Router>
+  </Provider>
+)
