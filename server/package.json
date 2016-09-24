@@ -4,6 +4,7 @@
   "description": "Software for hotel travel agency.",
   "main": "index.js",
   "scripts": {
+    "fakeapi": "json-server --watch ./_fake-api/db.json --routes ./_fake-api/routes.json",
     "prebuild": "rm -rf lib",
     "build": "babel src -d lib",
     "dev": "env NODE_ENV=development nodemon --exec 'babel-node src/index.js'"
@@ -36,6 +37,7 @@
     "eslint-config-standard": "^6.0.0-beta.3",
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0",
+    "json-server": "^0.8.21",
     "nodemon": "^1.9.2"
   }
 }
