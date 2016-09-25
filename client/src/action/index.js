@@ -1,7 +1,7 @@
 import AlgebraicType from 'algebraic-type'
 
 const Action = AlgebraicType({
-  Language: { languages: Array },
+  LanguagesReceived: { languages: Array },
 
   LoginRequested: { state: String },
   LoginSucceeded: { state: String },
@@ -9,7 +9,7 @@ const Action = AlgebraicType({
 })
 
 export const {
-  Language,
+  LanguagesReceived,
 
   LoginRequested,
   LoginSucceeded,
