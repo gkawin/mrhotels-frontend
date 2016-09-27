@@ -1,5 +1,5 @@
 
-import * as Action from '../../action'
+import Action from '../../action'
 
 import React from 'react'
 import { connect } from 'react-redux'

@@ -8,10 +8,4 @@ const Action = AlgebraicType({
   LoginFail:      { state: String },
 })
 
-export const {
-  LanguagesReceived,
-
-  LoginRequested,
-  LoginSucceeded,
-  LoginFail
-} = Action
+export default Action
