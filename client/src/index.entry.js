@@ -16,7 +16,7 @@ const history = syncHistoryWithStore(browserHistory, store)
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path='/l' component={LanguagesContainer} />
+      <Route path='/' component={LanguagesContainer} />
     </Router>
   </Provider>
 , document.getElementById('react'))
