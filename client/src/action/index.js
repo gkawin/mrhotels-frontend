@@ -1,13 +1,11 @@
 import AlgebraicType from 'algebraic-type'
 
 const Action = AlgebraicType({
+  LanguagesReceived: { languages: Array },
+
   LoginRequested: { state: String },
   LoginSucceeded: { state: String },
   LoginFail:      { state: String },
 })
 
-export const {
-  LoginRequested,
-  LoginSucceeded,
-  LoginFail
-} = Action
+export default Action
