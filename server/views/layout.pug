@@ -5,4 +5,5 @@ html
     title= appTitle
   body
     block content
+    script(type="application/json" id="preload")= preload
     script(type="text/javascript" src=`${asserts}/bundle.js`, defer)

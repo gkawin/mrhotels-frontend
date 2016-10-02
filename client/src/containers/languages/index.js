@@ -4,6 +4,9 @@ import Action from '../../action'
 import React from 'react'
 import { connect } from 'react-redux'
 
+//action creator
+
+
 const LanguagesContainer = React.createClass({
   propTypes: {
     onLoadLanguages: React.PropTypes.func
