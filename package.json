@@ -64,8 +64,8 @@
     "stylus-loader": "^2.1.1",
     "test-bed": "^0.5.3",
     "url-loader": "^0.5.7",
-    "webpack": "^2.1.0-beta.13",
-    "webpack-dev-server": "^2.1.0-beta.0"
+    "webpack": "^2.1.0-beta.27",
+    "webpack-dev-server": "^2.1.0-beta.12"
   },
   "scripts": {
     "build": "node ./scripts/build.js",
@@ -74,8 +74,7 @@
     "dev:test": "env NODE_ENV=test test-bed",
     "dev:ui": "env NODE_ENV=development start-storybook -p 2007",
     "test": "karma start ./config/karma.conf.js",
-    "lint": "./node_modules/.bin/eslint src",
-    "l10n": "node ./lib/languages/downloadl10n.js"
+    "lint": "./node_modules/.bin/eslint src"
   },
   "repository": {
     "type": "git",
