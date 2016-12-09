@@ -1,0 +1,3 @@
+
+//move inside
+require('./src')
