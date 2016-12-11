@@ -1,7 +1,7 @@
 {
   "name": "mrhotels-frontend",
   "version": "1.0.0",
-  "description": "Describe mrhotels-frontend here",
+  "description": "Travel agency system",
   "private": true,
   "scripts": {
     "build": "nwb build-react-app",
@@ -15,9 +15,15 @@
     "react-dom": "^15.4.1"
   },
   "devDependencies": {
+    "eslint": "^3.12.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1",
     "nwb": "0.11.x"
   },
-  "author": "",
+  "author": "Kawin Glomjai <g.kawin@live.com>",
   "license": "MIT",
-  "repository": ""
+  "repository": "https://github.com/gkawin/mrhotels-frontend.git"
 }
