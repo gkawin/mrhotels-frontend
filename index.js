@@ -1,3 +1,0 @@
-
-//move inside
-require('./src')

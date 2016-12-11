@@ -1,60 +1,23 @@
 {
-  "name": "mrhotels.co",
+  "name": "mrhotels-frontend",
   "version": "1.0.0",
-  "description": "Software for hotel travel agency.",
-  "main": "index.js",
+  "description": "Describe mrhotels-frontend here",
+  "private": true,
+  "scripts": {
+    "build": "nwb build-react-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-react-app",
+    "test": "nwb test",
+    "test:watch": "nwb test --server"
+  },
   "dependencies": {
-    "babel-runtime": "^6.9.2",
-    "classnames": "^2.2.5",
-    "lodash": "^4.15.0",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-fa": "^4.1.2",
-    "react-router": "^2.5.2"
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
   },
   "devDependencies": {
-    "@kadira/storybook": "^1.30.0",
-    "autoprefixer": "^6.3.6",
-    "babel-core": "^6.10.4",
-    "css-loader": "^0.23.1",
-    "eslint": "^3.1.1",
-    "file-loader": "^0.9.0",
-    "json-loader": "^0.5.4",
-    "postcss-loader": "^0.9.1",
-    "power-assert": "^1.4.1",
-    "react-transform-catch-errors": "^1.0.2",
-    "redbox-react": "^1.3.0",
-    "style-loader": "^0.13.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^2.1.1",
-    "test-bed": "^0.5.3",
-    "url-loader": "^0.5.7",
-    "webpack": "^2.1.0-beta.27",
-    "webpack-dev-server": "^2.1.0-beta.12"
+    "nwb": "0.11.x"
   },
-  "scripts": {
-    "build": "node ./scripts/build.js",
-    "build:test": "env NODE_ENV=test webpack --config ./config/webpack.config.test.js",
-    "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --host=0.0.0.0 --port=2000 --config ./config/webpack.config.dev",
-    "dev:test": "env NODE_ENV=test test-bed",
-    "dev:ui": "env NODE_ENV=development start-storybook -p 2007",
-    "test": "karma start ./config/karma.conf.js",
-    "lint": "./node_modules/.bin/eslint src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gkawin/mrhotels.git"
-  },
-  "keywords": [
-    "hotels",
-    "hotel",
-    "travel-agency",
-    "software"
-  ],
-  "author": "Kawin Glomjai <g.kawin@live.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gkawin/mrhotels/issues"
-  },
-  "homepage": "https://github.com/gkawin/mrhotels#readme"
+  "author": "",
+  "license": "MIT",
+  "repository": ""
 }
