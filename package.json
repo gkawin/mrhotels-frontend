@@ -8,13 +8,17 @@
     "clean": "nwb clean-app",
     "start": "nwb serve-react-app",
     "test": "nwb test",
-    "test:watch": "nwb test --server"
+    "test:watch": "nwb test --server",
+    "storybook": "start-storybook -p 3007 -c .storybook"
   },
   "dependencies": {
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-addons-pure-render-mixin": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-fa": "^4.1.2"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.34.0",
     "autoprefixer": "^6.5.3",
     "cssnano": "^3.8.2",
     "eslint": "^3.12.0",
