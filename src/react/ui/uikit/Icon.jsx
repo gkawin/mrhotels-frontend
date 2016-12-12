@@ -4,17 +4,17 @@
 
 import React from 'react'
 import ReactFontAwesome from 'react-fa'
-import Classnames from 'classnames'
+import cx from 'classnames'
 import _ from 'lodash'
 
 import './Icon.styl'
 
 const propFields = [
-  'name', 'size', 'rotate', 'flip', //string
-  'pulse', 'inverse', 'spin' //boolean
+  'name', 'size', 'rotate', 'flip', // string
+  'pulse', 'inverse', 'spin' // boolean
 ]
 
-export const iconClassname = (className) => Classnames('icon', className)
+export const iconClassname = (className) => cx('icon', className)
 
 export const getAllIcons = () => _(document.styleSheets)
   .toArray()
@@ -39,7 +39,7 @@ const Icon = (props) => (
 
 Icon.propTypes = {
   onClick: React.PropTypes.func,
-  className: React.PropTypes.string,
+  className: React.PropTypes.string
 }
 
 export default Icon

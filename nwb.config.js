@@ -1,17 +1,17 @@
 
-const isDevelopment = process.env.NODE_ENV === 'development'
-
+const nib = require('nib')
 module.exports = {
   type: 'react-app',
   webpack: {
+    loaders: {
+      stylus: {
+        config: {
+          use: [ nib() ]
+        }
+      }
+    },
     defined: {
       __VERSION__: JSON.stringify(require('./package.json').version)
-    },
-    loaders: {
-      css: {
-        modules: true,
-        localIdentName: (isDevelopment ? '[path][name]__[local]__' : '') + '[hash:base64:5]'
-      }
     }
   }
 }

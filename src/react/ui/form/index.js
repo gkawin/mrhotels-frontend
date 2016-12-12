@@ -7,5 +7,5 @@ export {
   FormInput,
   FormRow,
   Form,
-  FormLabel,
+  FormLabel
 }
