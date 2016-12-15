@@ -10,8 +10,7 @@
     "test": "nwb test",
     "test:watch": "nwb test --server",
     "storybook": "start-storybook -p 3007 -c .storybook",
-    "lint": "eslint src",
-    "version": "nwb -v"
+    "lint": "eslint src"
   },
   "dependencies": {
     "react": "^15.4.1",
