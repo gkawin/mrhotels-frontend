@@ -1,6 +1,9 @@
 
+const isTest = process.env.NODE_ENV === 'test'
+
 const nib = require('nib')
-module.exports = {
+
+const config = {
   type: 'react-app',
   webpack: {
     loaders: {
@@ -15,3 +18,23 @@ module.exports = {
     }
   }
 }
+
+if (isTest) {
+  config.webpack.compat = {
+    enzyme: true,
+    sinon: true
+  }
+
+  config.karma = {
+    testContext: 'tests.webpack.js',
+    plugins: [
+      require('karma-chai'),
+      require('karma-spec-reporter'),
+      require('karma-sinon')
+    ],
+    frameworks: ['mocha', 'chai', 'sinon'],
+    reporters: ['spec']
+  }
+}
+
+module.exports = config
