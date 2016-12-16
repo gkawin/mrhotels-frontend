@@ -6,12 +6,12 @@
   "scripts": {
     "build": "nwb build-react-app",
     "clean": "nwb clean-app",
-    "start": "nwb serve-react-app",
+    "dev": "nwb serve-react-app",
     "test": "nwb test",
     "test:watch": "nwb test --server",
-    "storybook": "start-storybook -p 3007 -c .storybook",
-    "lint": "eslint src",
-    "testbed": "NODE_ENV=test test-bed -p 3011 -c .testbed/webpack.config.test-bed.js"
+    "test:ui": "start-storybook -p 3007 -c .storybook",
+    "test:bed": "NODE_ENV=test test-bed -p 3011 -c .testbed/webpack.config.test-bed.js",
+    "lint": "eslint src"
   },
   "dependencies": {
     "react": "^15.4.1",
