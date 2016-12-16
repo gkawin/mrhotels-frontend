@@ -3,4 +3,4 @@ import {render} from 'react-dom'
 
 import App from './App.jsx'
 
-render(<App />, document.querySelector('#app'))
+render(<div>fuck</div>, document.querySelector('#app'))

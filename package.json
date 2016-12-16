@@ -10,7 +10,8 @@
     "test": "nwb test",
     "test:watch": "nwb test --server",
     "storybook": "start-storybook -p 3007 -c .storybook",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "testbed": "NODE_ENV=test test-bed -p 3011 -c .testbed/webpack.config.test-bed.js"
   },
   "dependencies": {
     "react": "^15.4.1",
@@ -42,7 +43,8 @@
     "react-addons-test-utils": "^15.4.1",
     "sinon": "^1.17.6",
     "stylus": "^0.54.5",
-    "stylus-loader": "^2.4.0"
+    "stylus-loader": "^2.4.0",
+    "test-bed": "github:taskworld/test-bed"
   },
   "author": "Kawin Glomjai <g.kawin@live.com>",
   "license": "MIT",
