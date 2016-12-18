@@ -1,0 +1,12 @@
+codecov:
+  bot: bananacop
+
+comment:
+  layout: header, changes, diff
+
+coverage:
+  range: "40...80"
+  ignore:
+  - .*spec\.js
+  status:
+    patch: false
