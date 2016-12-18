@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: '6'
+dependencies:
+  pre:
+    - npm i -g codecov npm@latest commit-status
+  override:
+    - (cd client && npm i && npm i)
+    - (cd server && npm i && npm i)
+    - (cd system-test && bundle install --deployment)
+  cache_directories:
+    - 'client/node_modules'
+    - 'server/node_modules'
+    - 'system-test/vendor/bundle'
+  post:
+    - sudo apt-get install xosd-bin
