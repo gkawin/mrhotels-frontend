@@ -1,6 +1,7 @@
 const Path = require('path')
-const BASE = Path.resolve(__dirname, '..')
 const webpack = require('webpack')
+
+const BASE = Path.resolve(__dirname, '..')
 const createWebpackConfig = require('../node_modules/nwb/lib/createWebpackConfig')
 
 const config = createWebpackConfig.default({},{})

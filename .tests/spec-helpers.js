@@ -1,8 +1,11 @@
 const chai = require('chai')
+const assert = require('power-assert')
+
 const expect = chai.expect
 
 Object.assign(global, {
   expect,
+  assert
 })
 
 chai.use(require('sinon-chai'))
