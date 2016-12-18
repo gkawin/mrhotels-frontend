@@ -26,7 +26,7 @@ if (isTest) {
   }
 
   config.karma = {
-    testContext: 'tests.webpack.js',
+    testContext: './.tests/tests-entry.js',
     plugins: [
       require('karma-chai'),
       require('karma-spec-reporter'),
