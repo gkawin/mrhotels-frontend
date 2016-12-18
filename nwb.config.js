@@ -7,11 +7,11 @@ const config = {
   type: 'react-app',
   webpack: {
     loaders: {
-      stylus: {
-        config: {
-          use: [ nib() ]
-        }
-      }
+      stylus: { config: { use: [ nib() ] } },
+      babel: { test: /\.jsx?/ }
+    },
+    extra: {
+      resolve: { extensions: ['', '.js', '.jsx', '.json'] }
     },
     defined: {
       __VERSION__: JSON.stringify(require('./package.json').version)
