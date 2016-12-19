@@ -4,7 +4,7 @@ import { basename } from 'path'
 import _ from 'lodash'
 
 function loadStories() {
-  const context = require.context('../src', true, /\.story\.jsx$/)
+  const context = require.context('../src', true, /\.story\.js$/)
   const chapters = _.sortBy(context.keys(), storyChapter)
   for (const key of chapters) {
     const moduleExports = context(key)
@@ -22,7 +22,7 @@ function loadStories() {
 }
 
 function storyChapter (key) {
-  return basename(key, '.story.jsx')
+  return basename(key, '.story.js')
 }
 
 configure(loadStories, module)
