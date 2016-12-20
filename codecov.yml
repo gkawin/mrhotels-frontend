@@ -6,7 +6,5 @@ comment:
 
 coverage:
   range: "40...80"
-  ignore:
-  - .*spec\.js
   status:
     patch: false
