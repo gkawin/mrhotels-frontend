@@ -1,3 +1,5 @@
+import '../src/react/design/index.styl'
+
 import React from 'react'
 import { configure, storiesOf, action } from '@kadira/storybook'
 import { basename } from 'path'

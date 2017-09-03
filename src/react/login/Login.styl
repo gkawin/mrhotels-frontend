@@ -1,4 +1,65 @@
 
 .login
-  &__form
-    background white
+  position absolute
+  top calc(50% - 75px)
+  left calc(50% - 50px)
+  height 150px
+  width 350px
+  padding 10px
+  z-index 2
+
+  &__header-container
+    position absolute
+    top calc(50% - 35px)
+    left calc(50% - 255px)
+    z-index: 2;
+  
+  &__header-content
+    float: left
+    color: #fff
+    font-family: 'Exo', sans-serif
+    font-size: 35px
+    font-weight: 200;
+  
+  &__header-highlight
+    color #5379fa !important
+
+  input[type=text]
+  input[type=password]
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    &:focus
+      outline: none;
+      border: 1px solid rgba(255,255,255,0.9);
+
+  input[type=password]
+    margin-top: 10px
+  
+  input[type=button]
+    width: 260px;
+    height: 35px;
+    background white;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px
+    
+    &:hover
+      opacity 0.8
+    &:active
+      opacity 0.6
+    &:focus
+      outline: none
