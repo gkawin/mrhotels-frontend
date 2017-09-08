@@ -4,13 +4,9 @@
   "description": "Travel agency system",
   "private": true,
   "scripts": {
-    "build": "nwb build-react-app",
-    "clean": "nwb clean-app",
-    "dev": "nwb serve-react-app",
+    "dev": "env NODE_ENV=development webpack-dev-server --hot --port 9000",
     "test": "jest",
-    "test:watch": "nwb test --server",
     "test:ui": "start-storybook -p 3007 -c .storybook",
-    "test:bed": "NODE_ENV=test test-bed -p 3011 -c .tests/webpack.config.test-bed.js",
     "lint": "eslint src"
   },
   "dependencies": {
@@ -19,6 +15,11 @@
     "react-fa": "^4.1.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^3.12.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-config-standard-react": "^4.2.0",
@@ -27,7 +28,9 @@
     "eslint-plugin-standard": "^2.0.1",
     "jest": "^20.0.4",
     "stylus": "^0.54.5",
-    "stylus-loader": "^2.4.0"
+    "stylus-loader": "^2.4.0",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
   },
   "author": "Kawin Glomjai <g.kawin@live.com>",
   "license": "MIT",
