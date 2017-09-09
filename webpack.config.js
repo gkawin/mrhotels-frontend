@@ -25,7 +25,7 @@ module.exports = {
           options: {
             cacheDirectory: true,
             presets: ['env', 'react'],
-            plugins: ['transform-runtime']
+            plugins: ['transform-runtime', 'transform-class-properties']
           }
         }
       }
