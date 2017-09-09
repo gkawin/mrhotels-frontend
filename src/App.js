@@ -1,4 +1,4 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-render(<div>HELLO REACT</div>, document.querySelector('#app'))
+render(<div>HELLO slmdfnksdjnfsjdfns</div>, document.querySelector('#app'))
