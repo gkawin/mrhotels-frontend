@@ -10,6 +10,8 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-fa": "^4.1.2"
@@ -35,5 +37,8 @@
   },
   "author": "Kawin Glomjai <g.kawin@live.com>",
   "license": "MIT",
-  "repository": "https://github.com/gkawin/mrhotels-frontend.git"
+  "repository": "https://github.com/gkawin/mrhotels-frontend.git",
+  "engines" : {
+    "node" : ">=7.10.0 < 7.0.0"
+  }
 }
