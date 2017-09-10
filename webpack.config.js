@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'eval',
   entry: {
     app: path.resolve(__dirname, 'src', 'entry.js'),
-    vendor: ['jquery', 'lodash']
+    vendor: ['jquery', 'lodash', 'react', 'react-dom', 'prop-types']
   },
   output: {
     filename: '[name].bundle.js',

@@ -1,9 +1,9 @@
 import React from 'react'
-import { configure, storiesOf, action } from '@kadira/storybook'
+import { configure, storiesOf, action } from '@storybook/react'
 import { basename } from 'path'
 import _ from 'lodash'
 
-function loadStories() {
+function loadStories () {
   const context = require.context('../src', true, /\.story\.js$/)
   const chapters = _.sortBy(context.keys(), storyChapter)
   for (const key of chapters) {
