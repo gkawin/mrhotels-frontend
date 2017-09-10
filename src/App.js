@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import MainLayout from './components/layout/MainLayout'
+import AppLayout from './components/layout/AppLayout'
 
 render(
-  <MainLayout>
+  <AppLayout>
     <div>Mr hotels</div>
-  </MainLayout>, document.querySelector('#app'))
+  </AppLayout>, document.querySelector('#app'))
