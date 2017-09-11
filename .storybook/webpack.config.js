@@ -1,11 +1,8 @@
 
 module.exports = {
+  devtool: 'cheap-module-eval-source-map',
   module: {
     loaders: [
-      {
-        test: /\.css$/,
-        loader: 'style!css?modules'
-      },
       {
         test: /\.(gif|png|ico)$/,
         loader: 'url?name=[name]-[hash:8].[ext]&limit=10240'
