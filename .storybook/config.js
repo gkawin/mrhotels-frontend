@@ -1,3 +1,5 @@
+import './storybook.css'
+
 import { configure } from '@storybook/react'
 
 function loadStories () {

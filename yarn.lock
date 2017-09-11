@@ -2054,7 +2054,7 @@ css-in-js-utils@^1.0.3:
   dependencies:
     hyphenate-style-name "^1.0.2"
 
-css-loader@^0.28.1:
+css-loader@^0.28.1, css-loader@^0.28.7:
   version "0.28.7"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.7.tgz#5f2ee989dd32edd907717f953317656160999c1b"
   dependencies:
@@ -6287,6 +6287,13 @@ style-loader@^0.17.0:
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.17.0.tgz#e8254bccdb7af74bd58274e36107b4d5ab4df310"
   dependencies:
     loader-utils "^1.0.2"
+
+style-loader@^0.18.2:
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.18.2.tgz#cc31459afbcd6d80b7220ee54b291a9fd66ff5eb"
+  dependencies:
+    loader-utils "^1.0.2"
+    schema-utils "^0.3.0"
 
 styled-components@^2.1.2:
   version "2.1.2"
