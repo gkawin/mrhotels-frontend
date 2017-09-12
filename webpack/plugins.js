@@ -15,6 +15,7 @@ module.exports = [
     )
   }),
   new HtmlWebpackPlugin({
+    title: 'Mr Hotels :: Hotels Agency.',
     template: path.join(__dirname, '..', 'src/template', 'index.html')
   })
 ]
