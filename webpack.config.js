@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'eval',
   entry: {
     app: path.resolve(__dirname, 'src', 'entry.js'),
-    vendor: ['jquery', 'lodash']
+    vendor: ['jquery', 'lodash', 'react', 'react-dom', 'prop-types']
   },
   output: {
     filename: '[name].bundle.js',
@@ -17,18 +17,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: true,
-            presets: ['env', 'react'],
-            plugins: ['transform-runtime', 'transform-class-properties']
-          }
-        }
-      }
+      require('./webpack/moduleRulesBabel')
     ]
   },
   plugins: require('./webpack/plugins'),
