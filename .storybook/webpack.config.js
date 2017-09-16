@@ -1,12 +1,9 @@
-
+const moduleRulesCommon = require('../webpack/moduleRulesCommon')
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      }
+      ...moduleRulesCommon({ css: true })
     ]
   }
 }
