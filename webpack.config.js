@@ -2,15 +2,18 @@
 const path = require('path')
 const moduleRulesCommon = require('./webpack/moduleRulesCommon')
 const moduleRulesBabel = require('./webpack/moduleRulesBabel')
+const moduleAliases = require('./webpack/moduleAliases')
 const development = process.env.NODE_ENV === 'development'
 
 module.exports = {
   devtool: 'eval',
   entry: {
     app: path.resolve(__dirname, 'src', 'entry.js'),
-    vendor: ['jquery', 'lodash', 'react', 'react-dom', 'prop-types']
+    vendor: [ 'jquery', 'lodash' ]
   },
-  resolve: require('./webpack/resolve'),
+  resolve: {
+    alias: moduleAliases
+  },
   output: {
     filename: '[name].bundle.js',
     pathinfo: development
