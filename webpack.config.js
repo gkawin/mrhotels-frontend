@@ -9,10 +9,12 @@ module.exports = {
   devtool: 'eval',
   entry: {
     app: path.resolve(__dirname, 'src', 'entry.js'),
-    vendor: [ 'jquery', 'lodash' ]
+    vendor: [ 'jquery', 'lodash', 'react', 'react-dom', 'prop-types' ]
   },
   resolve: {
-    alias: moduleAliases
+    alias: Object.assign({ }, moduleAliases,
+      { 'mh-design$': require.resolve('./src/design') }
+    )
   },
   output: {
     filename: '[name].bundle.js',
