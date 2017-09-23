@@ -14,9 +14,9 @@ class MainLayout extends React.Component {
   render () {
     return (
       <ThemeProvider theme={this.state.theme}>
-        <div>
+        <section>
           {this.props.children}
-        </div>
+        </section>
       </ThemeProvider>
     )
   }
