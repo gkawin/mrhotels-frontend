@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "env NODE_ENV=development webpack-dev-server --hot --inline --progress --port 3000",
-    "dev:showroom": "start-storybook -p 3001 -c .storybook",
+    "dev:ui": "start-storybook -p 3001 -c .storybook",
     "test": "jest",
     "lint": "eslint src"
   },
