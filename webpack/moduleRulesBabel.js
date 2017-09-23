@@ -12,10 +12,14 @@ module.exports = [
       options: {
         cacheDirectory: true,
         presets: [
-          'env',
+          [ 'env', { module: false } ],
           'react'
         ],
-        plugins: ['transform-runtime', 'transform-class-properties']
+        plugins: [
+          'transform-runtime',
+          'transform-decorators-legacy',
+          'transform-class-properties'
+        ]
       }
     }
   }

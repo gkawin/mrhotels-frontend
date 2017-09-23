@@ -2,8 +2,12 @@ import styled from 'styled-components'
 import { colors } from 'mh-design'
 
 export const Button = styled.button`
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 16px;
-  width: 200px;
-  background: ${colors.$green200};
+  width: ${props => props.width || '200px'};
+  border: none;
+  color: white;
+  background: ${colors.$blue900};
+  vertical-align: middle;
+  cursor: pointer;
 `

@@ -8,5 +8,5 @@ storiesOf('Button', module)
   <Button>Click Me Baby</Button>
 ))
 .add('raise button', () => (
-  <Button raise>Click Me Baby</Button>
+  <Button raise>Raise Click Me Baby</Button>
 ))
