@@ -25,8 +25,8 @@ module.exports = {
   },
   module: {
     rules: [
-      ...moduleRulesCommon({ css: false }),
-      ...moduleRulesBabel()
+      ...moduleRulesBabel,
+      ...moduleRulesCommon({ css: false })
     ]
   },
   plugins: require('./webpack/plugins'),
