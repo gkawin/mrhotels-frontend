@@ -12,7 +12,10 @@ module.exports = () => {
         loader: 'babel-loader',
         options: {
           cacheDirectory: true,
-          presets: ['env', 'react'],
+          presets: [
+            'env',
+            'react'
+          ],
           plugins: ['transform-runtime', 'transform-class-properties']
         }
       }
