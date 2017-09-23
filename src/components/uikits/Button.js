@@ -5,12 +5,14 @@ const Button = styled.button`
   font-size: 16px;
   width: ${props => props.width || '200px'};
   border: none;
+  outline: none;
   color: white;
   background: ${props => props.theme.secoundary.main};
   vertical-align: middle;
   cursor: pointer;
-  > :hover {
-    background-color: ${props => props.theme.secoundary.light};
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: ${props => props.theme.primary.main};
   }
 `
 export default Button
