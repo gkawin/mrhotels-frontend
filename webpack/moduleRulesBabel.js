@@ -1,4 +1,5 @@
 const path = require('path')
+const development = process.enc.NODE_ENV === 'development'
 
 module.exports = [
   {
@@ -16,6 +17,7 @@ module.exports = [
           'react'
         ],
         plugins: [
+          [ 'styled-components', { 'displayName': development } ],
           'transform-runtime',
           'transform-decorators-legacy',
           'transform-class-properties'

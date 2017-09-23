@@ -9,5 +9,7 @@ const Button = styled.button`
   background: ${props => props.theme.secoundary.main};
   vertical-align: middle;
   cursor: pointer;
+  ::hover
+    background-color: ${props => props.theme.secoundary.light};
 `
 export default Button
