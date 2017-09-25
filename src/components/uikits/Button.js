@@ -10,7 +10,7 @@ class Button extends React.PureComponent {
   }
   onClick = (e) => {
     e.preventDefault()
-    this.props.onClick(e)
+    this.props.onClick(e.target.value)
   }
   render () {
     return (
