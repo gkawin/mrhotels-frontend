@@ -1,15 +1,19 @@
 import './storybook.css'
 
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { configure, addDecorator, setAddon } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
+import { withKnobs } from '@storybook/addon-knobs'
 import { theme } from '../src/design'
 
-addDecorator((story, context) => withInfo('common info')(story)(context));
+const Container = styled.div`
+  padding: 20px
+`
+
+addDecorator(withKnobs)
 addDecorator(story => (
   <ThemeProvider theme={theme}>
-    <div style={{padding: '20px'}}>
+    <div style={{ padding: '20px' }}>
       {story()}
     </div>
   </ThemeProvider>
