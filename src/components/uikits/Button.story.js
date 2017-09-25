@@ -5,8 +5,8 @@ import Button from './Button'
 
 storiesOf('Button', module)
 .add('Flat button', () => (
-  <Button>Click Me Baby</Button>
-))
-.add('raise button', () => (
-  <Button raise>Raise Click Me Baby</Button>
+  <div style={{ display: 'flex', flexDirection: 'row' }}>
+    <Button>primary</Button>
+    <Button secoundary>secoundary</Button>
+  </div>
 ))

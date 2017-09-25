@@ -21,7 +21,7 @@ class Button extends React.PureComponent {
   }
 }
 
-const ButtonBaseStyle = styled(Button)`
+export default styled(Button)`
   padding: 10px 20px;
   font-size: 16px;
   width: ${props => props.width || '200px'};
@@ -36,5 +36,3 @@ const ButtonBaseStyle = styled(Button)`
     background: ${props => props.theme.secoundary.dark};
   }
 `
-
-export default ButtonBaseStyle

@@ -15,12 +15,14 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "prop-types": "^15.5.10",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-fa": "^4.1.2",
     "styled-components": "^2.1.2"
   },
   "devDependencies": {
+    "@storybook/addon-info": "^3.2.10",
+    "@storybook/addon-knobs": "^3.2.10",
     "@storybook/react": "^3.2.8",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
