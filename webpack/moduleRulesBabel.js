@@ -1,5 +1,5 @@
 const path = require('path')
-const development = process.enc.NODE_ENV === 'development'
+const development = process.env.NODE_ENV === 'development'
 
 module.exports = [
   {
