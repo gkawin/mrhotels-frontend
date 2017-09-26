@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled from './Button.style'
 
 class Button extends React.PureComponent {
   static propTypes = {
@@ -21,18 +21,4 @@ class Button extends React.PureComponent {
   }
 }
 
-export default styled(Button)`
-  padding: 10px 20px;
-  font-size: 16px;
-  width: ${props => props.width || '200px'};
-  border: none;
-  outline: none;
-  color: white;
-  background: ${props => props.theme.secoundary.main};
-  vertical-align: middle;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background: ${props => props.theme.secoundary.dark};
-  }
-`
+export default styled(Button)

@@ -1,4 +1,3 @@
-const moduleRulesCommon = require('../webpack/moduleRulesCommon')
 const moduleAliases = require('../webpack/moduleAliases')
 const moduleRulesBabel = require('../webpack/moduleRulesBabel')
 
@@ -7,7 +6,6 @@ module.exports = {
   module: {
     rules: [
       ...moduleRulesBabel,
-      ...moduleRulesCommon({ css: true })
     ]
   },
   resolve: {
