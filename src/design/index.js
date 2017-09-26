@@ -3,13 +3,13 @@ import * as Colors from './colors'
 export const colors = Colors
 export const theme = {
   primary: {
-    main: Colors.$redA700,
-    light: Colors.$redA200,
-    dark: Colors.$redA700
+    main: Colors.$red500,
+    light: '#ff7961',
+    dark: '#ba000d'
   },
   secoundary: {
-    main: Colors.$blueA700,
-    light: Colors.$blueA700,
-    dark: Colors.$blueA700
+    main: Colors.$blue900,
+    light: '#5472d3',
+    dark: '#002171'
   }
 }

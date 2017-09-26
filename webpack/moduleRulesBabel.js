@@ -1,4 +1,5 @@
 const path = require('path')
+const development = process.env.NODE_ENV === 'development'
 
 module.exports = [
   {
@@ -12,10 +13,15 @@ module.exports = [
       options: {
         cacheDirectory: true,
         presets: [
-          'env',
+          [ 'env', { module: false } ],
           'react'
         ],
-        plugins: ['transform-runtime', 'transform-class-properties']
+        plugins: [
+          [ 'styled-components', { 'displayName': development } ],
+          'transform-runtime',
+          'transform-decorators-legacy',
+          'transform-class-properties'
+        ]
       }
     }
   }
