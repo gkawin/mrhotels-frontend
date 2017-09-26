@@ -16,5 +16,7 @@ storiesOf('Button', module)
   <Container>
     <Button>primary</Button>
     <Button secoundary>secoundary</Button>
+    <Button warning>warning</Button>
+    <Button danger>danger</Button>
   </Container>
 )))

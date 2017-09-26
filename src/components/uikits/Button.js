@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
+import { colors } from 'mh-design'
 
 class Button extends React.PureComponent {
   static propTypes = {
@@ -31,6 +32,24 @@ const secoundary = css`
   }
 `
 
+const warning = css`
+  border: none;
+  background: ${props => colors.$amber500};
+  color: black;
+  &:hover {
+    background: #c79100;
+  }
+`
+
+const danger = css`
+  border: none;
+  background: ${props => colors.$red900};
+  color: white;
+  &:hover {
+    background: #7f0000;
+  }
+`
+
 export default styled(Button)`
   padding: 10px 20px;
   font-size: 16px;
@@ -46,4 +65,6 @@ export default styled(Button)`
     background: ${props => props.theme.secoundary.dark};
   }
   ${props => props.secoundary && secoundary}
+  ${props => props.warning && warning}
+  ${props => props.danger && danger}
 `
