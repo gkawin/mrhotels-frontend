@@ -12,7 +12,7 @@ const Container = styled.div`
 `
 
 storiesOf('Button', module)
-.add('Flat button', withInfo('the common button style')(() => (
+.add('Flat button', withInfo('the common button style')((log) => (
   <Container>
     <Button>primary</Button>
     <Button secoundary>secoundary</Button>
