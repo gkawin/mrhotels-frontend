@@ -3,20 +3,19 @@ import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-import Button from './Button'
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-`
+import Button from './Button.jsx'
 
 storiesOf('Button', module)
-.add('Flat button', withInfo('the common button style')((log) => (
-  <Container>
-    <Button>primary</Button>
-    <Button secoundary>secoundary</Button>
-    <Button warning>warning</Button>
-    <Button danger>danger</Button>
-  </Container>
-)))
+.addDecorator(withInfo('the common button style')((story) => story()))
+.add('Primary', (log) => (
+  <Button>primary</Button>
+))
+.add('Secoundary', () => (
+  <Button secoundary>secoundary</Button>
+))
+.add('Warning', () => (
+  <Button warning>warning</Button>
+))
+.add('Danger', () => (
+  <Button danger>danger</Button>
+))

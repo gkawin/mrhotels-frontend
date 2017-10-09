@@ -1,20 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-import Input from './Input'
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`
+import Input from './Input.jsx'
 
 storiesOf('Input', module)
-.add('Input text', withInfo('the common Input style')((log) => (
-  <Container>
-    <Input type='text' placeholder='please fill here....' />
-    <Input type='text' placeholder='disabled' disabled />
-    <Input type='password' />
-  </Container>
-)))
+.addDecorator(withInfo('Input style (common in whole application)', (story) => story()))
+.add('Input text', (log) => (
+  <Input type='text' placeholder='please fill here....' />
+))
