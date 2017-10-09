@@ -51,8 +51,5 @@
   },
   "author": "Kawin Glomjai <g.kawin@live.com>",
   "license": "MIT",
-  "repository": "https://github.com/gkawin/mrhotels-frontend.git",
-  "engines": {
-    "node": ">=7.10.0 < 7.0.0"
-  }
+  "repository": "https://github.com/gkawin/mrhotels-frontend.git"
 }
