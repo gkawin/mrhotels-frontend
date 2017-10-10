@@ -4,6 +4,7 @@ import { colors, fontSize } from 'mh-design'
 const Button = styled.button`
   padding: 10px 20px;
   font-size: ${fontSize.L};
+  font-weight: 600;
   width: ${props => props.width || '200px'};
   border: none;
   border-radius: 5px;
@@ -17,35 +18,26 @@ const Button = styled.button`
     background: ${props => props.theme.secoundary.dark};
   }
   ${props => props.secoundary && secoundary}
-  ${props => props.warning && warning}
   ${props => props.danger && danger}
 `
 
 const secoundary = css`
   border: 1px solid ${props => props.theme.secoundary.main};
   background: white;
-  color: black;
+  color: ${props => props.theme.secoundary.main};
   &:hover {
     background: ${props => props.theme.secoundary.main};
     color: white;
   }
 `
 
-const warning = css`
-  border: none;
-  background: ${colors.$amber500};
-  color: black;
-  &:hover {
-    background: ${colors.$amber300};
-  }
-`
-
 const danger = css`
-  border: none;
-  background: ${colors.$red500};
-  color: white;
+  border: 1px solid ${props => props.theme.primary.dark};
+  background: white;
+  color: ${props => props.theme.primary.dark};
   &:hover {
-    background: ${colors.$red900};
+    color: white;
+    background: ${props => props.theme.primary.dark};
   }
 `
 

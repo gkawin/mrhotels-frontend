@@ -12,9 +12,6 @@ storiesOf('Button', module)
 .add('Secoundary', () => (
   <Button secoundary>secoundary</Button>
 ))
-.add('Warning', () => (
-  <Button warning>warning</Button>
-))
 .add('Danger', () => (
   <Button danger>danger</Button>
 ))
