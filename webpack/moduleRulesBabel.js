@@ -17,10 +17,9 @@ module.exports = [
           'react'
         ],
         plugins: [
-          [ 'styled-components', { 'displayName': development } ],
           'transform-runtime',
-          'transform-decorators-legacy',
-          'transform-class-properties'
+          'transform-class-properties',
+          [ 'styled-components', { 'displayName': development } ],
         ]
       }
     }

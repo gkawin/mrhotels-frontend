@@ -18,6 +18,8 @@ plugins:
 globals:
   expect: false
 rules:
+  #common
+  comma-dangle: off
   # React common rules
   react/jsx-boolean-value: [ error, never ]
   react/jsx-closing-bracket-location: [ warn, line-aligned ]

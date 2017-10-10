@@ -9,3 +9,9 @@ storiesOf('Input', module)
 .add('Input text', (log) => (
   <Input type='text' placeholder='please fill here....' />
 ))
+.add('Input with Password', () => (
+  <Input type='password' placeholder='fill password here....' />
+))
+.add('Input password with reveal', () => (
+  <Input type='password' reveal />
+))
