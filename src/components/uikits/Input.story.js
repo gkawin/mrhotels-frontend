@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
 import Input from './Input.jsx'
+import RevealPasswordInput from './RevealPasswordInput'
 
 storiesOf('Input', module)
 .addDecorator(withInfo('the common Input style')((story) => story()))
@@ -13,5 +14,5 @@ storiesOf('Input', module)
   <Input type='password' placeholder='fill password here....' />
 ))
 .add('Input password with reveal', () => (
-  <Input type='password' reveal />
+  <RevealPasswordInput />
 ))

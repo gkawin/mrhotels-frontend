@@ -1,24 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { colors } from 'mh-design'
 
-class Input extends React.PureComponent {
-  static propTypes = {
-    className: PropTypes.string,
-    placeholder: PropTypes.string,
-  }
-  render () {
-    return (
-      <input
-        className={this.props.className}
-        placeholder={this.props.placeholder}
-      />
-    )
-  }
-}
-
-const enhance = (BaseComponent) => styled(BaseComponent)`
+const Input = styled.input`
   box-sizing: border-box;
   margin: 0;
   padding: 10px 20px 10px 15px;
@@ -34,4 +17,4 @@ const enhance = (BaseComponent) => styled(BaseComponent)`
   }
 `
 
-export default enhance(Input)
+export default Input
