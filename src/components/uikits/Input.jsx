@@ -1,11 +1,12 @@
 import styled from 'styled-components'
-import { colors } from 'mh-design'
+import { colors, fontSize } from 'mh-design'
 
 const Input = styled.input`
   box-sizing: border-box;
   margin: 0;
   padding: 10px 20px 10px 15px;
   line-height: 20px;
+  font-size: ${fontSize.L};
   color: ${colors.$grey700};
   :focus {
     border: 2px solid ${props => props.theme.secoundary.main};

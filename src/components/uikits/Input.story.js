@@ -13,6 +13,6 @@ storiesOf('Input', module)
 .add('Input with Password', () => (
   <Input type='password' placeholder='fill password here....' />
 ))
-.add('Input password with reveal', () => (
-  <RevealPasswordInput />
+.add('Input password with reveal', (log) => (
+  <RevealPasswordInput value='foooooooo' onChange={(e) => console.log(e)} />
 ))
