@@ -4,5 +4,9 @@
     "stylelint-config-standard",
     "stylelint-config-styled-components"
   ],
-  "syntax": "scss"
+  "syntax": "scss",
+  "indentPref": {
+    "expect": 2,
+    "error": true
+  },
 }

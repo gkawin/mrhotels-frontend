@@ -6,6 +6,7 @@ const Button = styled.button`
   font-size: 16px;
   width: ${props => props.width || '200px'};
   border: none;
+  border-radius: 5px;
   outline: none;
   color: white;
   background: ${props => props.theme.secoundary.main};
@@ -41,10 +42,10 @@ const warning = css`
 
 const danger = css`
   border: none;
-  background: ${colors.$red900};
+  background: ${colors.$red500};
   color: white;
   &:hover {
-    background: #7f0000;
+    background: ${colors.$red900};
   }
 `
 
