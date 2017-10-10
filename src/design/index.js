@@ -13,3 +13,4 @@ export const theme = {
     dark: '#002171'
   }
 }
+export const fontSize = { S: '12px', M: '14px', L: '16px', XL: '24px', XXL: '36px' }

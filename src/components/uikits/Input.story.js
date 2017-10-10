@@ -5,7 +5,7 @@ import { withInfo } from '@storybook/addon-info'
 import Input from './Input.jsx'
 
 storiesOf('Input', module)
-.addDecorator(withInfo('Input style (common in whole application)', (story) => story()))
+.addDecorator(withInfo('the common Input style')((story) => story()))
 .add('Input text', (log) => (
   <Input type='text' placeholder='please fill here....' />
 ))

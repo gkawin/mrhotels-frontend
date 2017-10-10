@@ -1,2 +1,2 @@
 require('./bootstrap')
-require('./app')
+require('./App')

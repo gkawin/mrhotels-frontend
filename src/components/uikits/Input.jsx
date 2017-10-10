@@ -1,16 +1,13 @@
 import styled from 'styled-components'
-import { colors } from 'mh-design'
+import { colors, fontSize } from 'mh-design'
 
 const Input = styled.input`
   box-sizing: border-box;
   margin: 0;
   padding: 10px 20px 10px 15px;
   line-height: 20px;
-  font-size: inherit;
-  color: ${colors.$grey500};
-  :hover {
-    border: 2px solid ${colors.$grey400};
-  }
+  font-size: ${fontSize.M};
+  color: ${colors.$grey700};
   :focus {
     border: 2px solid ${props => props.theme.secoundary.main};
   }
