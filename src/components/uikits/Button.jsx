@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
-import { colors, fontSize } from 'mh-design'
+import { fontSize } from 'mh-design'
 
 const Button = styled.button`
   padding: 10px 20px;
-  font-size: ${fontSize.L};
+  font-size: ${props => props.fontSize || fontSize.L};
   font-weight: 600;
   width: ${props => props.width || '200px'};
   border: none;
